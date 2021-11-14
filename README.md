@@ -28,7 +28,12 @@ Android Lint的使用
  3. 避免使用Log/System.out.println
 添加plugin，统一lint.xml，lintOptions，自动更新最新aar(含lint规则)
  ```
+ 
  [AndroidLint](https://github.com/RocketZLY/AndroidLint)  米大佬的lint库，比较全
+```
+ 1. x【类型/返回值判断】
+ 2. x【参数判断，是否有空格，event类名】
+ ```
  
  [AndroidLint](https://github.com/RocketZLY/AndroidLint)  b站逮虾户的lint库
  ```
@@ -37,10 +42,11 @@ Android Lint的使用
  3. GlideDetector 不允许使用glide/decodeFile，应该使用中间方法【方法判断，glide.with判断，BitmapFactory.decodexxx判断】
  4. LogDetector  不允许使用Log.xxx【方法判断】
  5. PngResourceDetector 扫描drawable/mipmap目录文件大于10【文件判断】
- 6. PrivacyClassDetector 
- 7. RouteDetector 不允许使用路由Annotation/方法/DefaultUriRequest【注解/方法/类名判断】
- 8. SafeFileDetector 不允许使用Environment.xxx/Pictures【方法/参数判断】
- 9. ThreadDetector 不允许使用Thread【类名判断】
- 10.AlertDialogDetector 不允许使用AlertDialog【类名判断】
+ 6. RouteDetector 不允许使用路由Annotation/方法/DefaultUriRequest【注解/方法/类名判断】
+ 7. SafeFileDetector 不允许使用Environment.xxx/Pictures【方法/参数判断】
+ 8. ThreadDetector 不允许使用Thread【类名判断】
+ 9.AlertDialogDetector 不允许使用AlertDialog【类名判断】
  
+DynamicLint  json配置文件，在beforeCheckRootProject读取并解析【类名/方法判断】
+PrivacyClassDetector  默认有配置文件，xxAsmNodeTypes通过ASM的方式，校验MethodInsnNode字节码【方法字节码判断】
 ```
