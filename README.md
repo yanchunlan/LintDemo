@@ -4,7 +4,7 @@ Android Lint的使用
 ## 使用方式
 1. 启动检测
     ```
-    gradlew lint
+    gradlew :app:lintDebug
     ```
 2. 添加依赖
     ```
@@ -31,8 +31,16 @@ Android Lint的使用
  
  [AndroidLint](https://github.com/RocketZLY/AndroidLint)  米大佬的lint库，比较全
 ```
- 1. x【类型/返回值判断】
- 2. x【参数判断，是否有空格，event类名】
+功能：
+    Crash预防：
+    	扫描项目中所有的Fragment都必须有空参构造函数，否则给与报错；避免直接使用kt扩展函数String#toXXX统一使用项目工具类String#toSafeXXX。
+    安全&性能：
+    	避免直接使用原生Toast、Log、Sp、Thread类，统一使用项目封装工具类；使用RxBus的时候必须调用disposeOnDestroy避免页面销毁了监听还在，导致npe异常。
+    代码规范：
+    	资源命名必须满足约定好的正则表达式；Activity必须继承BaseActivity不能直接继承AppCompatActivity等等
+其他：
+    增量扫描（增量文件寻找方式：git diff $baseline $revision --name-only --diff-filter=ACMRTUXB）
+    json动态下发配置
  ```
  
  [AndroidLint](https://github.com/RocketZLY/AndroidLint)  b站逮虾户的lint库
