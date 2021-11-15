@@ -14,11 +14,13 @@ Android Lint的使用
     // module的aar内部包含检测规则
     lintPublish project(path: ':lintlib')
     ```
+备注：.github/workflows/android.yml github编译工作流
     
 ## 功能介绍
 1.  LogDetector  不允许直接使用Log
 2.  GlideWithDetector  Glide.with不允许传入Application
 3.  DependencyDetector  组件依赖关系，输出的字符串复制到[字符串生成图形](https://mermaid-js.github.io/mermaid-live-editor/edit/#eyJjb2RlIjoiZ3JhcGggVERcbiAgIGFwcC0tPmNoZWNrXG4gICAgY2hlY2stLT5tb2R1bGU0XG4gICAgY2hlY2stLT5tb2R1bGU1XG4gICAgYXBwLS0-bW9kdWxlMlxuICAgIG1vZHVsZTItLT5tb2R1bGU1XG4gICAgYXBwLS0-bW9kdWxlM1xuXG4gICIsIm1lcm1haWQiOiJ7XG4gIFwidGhlbWVcIjogXCJkYXJrXCJcbn0iLCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ)
+
 ## 其他
  [MeituanLintDemo](https://github.com/GavinCT/MeituanLintDemo)  美团的lint库
 ```
