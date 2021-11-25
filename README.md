@@ -22,7 +22,7 @@ Android Lint的使用
 3.  DependencyDetector  组件依赖关系，输出的字符串复制到[字符串生成图形](https://mermaid-js.github.io/mermaid-live-editor/edit/#eyJjb2RlIjoiZ3JhcGggVERcbiAgIGFwcC0tPmNoZWNrXG4gICAgY2hlY2stLT5tb2R1bGU0XG4gICAgY2hlY2stLT5tb2R1bGU1XG4gICAgYXBwLS0-bW9kdWxlMlxuICAgIG1vZHVsZTItLT5tb2R1bGU1XG4gICAgYXBwLS0-bW9kdWxlM1xuXG4gICIsIm1lcm1haWQiOiJ7XG4gIFwidGhlbWVcIjogXCJkYXJrXCJcbn0iLCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ)
 
 ## 其他
- [MeituanLintDemo](https://github.com/GavinCT/MeituanLintDemo)  美团的lint库
+ [meituan/LintDemo](https://github.com/GavinCT/MeituanLintDemo)
 ```
 功能：
  1. 检测HashMap能否替换为SparseArray
@@ -31,7 +31,7 @@ Android Lint的使用
 添加plugin，统一lint.xml，lintOptions，自动更新最新aar(含lint规则)
  ```
  
- [AndroidLint](https://github.com/RocketZLY/AndroidLint)  米大佬的lint库，比较全
+ [RocketZLY/AndroidLint](https://github.com/RocketZLY/AndroidLint)
 ```
 功能：
     Crash预防：
@@ -45,7 +45,7 @@ Android Lint的使用
     json动态下发配置
  ```
  
- [AndroidLint](https://github.com/RocketZLY/AndroidLint)  b站逮虾户的lint库
+ [Leifzhang/AndroidLint](https://github.com/Leifzhang/AndroidLint)
  ```
  1. ContextCastDetector 不允许context返回值ContextWrapper/Application强转【类型/返回值判断】
  2. EventSpaceDetector Event参数是否有空格【参数判断，是否有空格，event类名】
