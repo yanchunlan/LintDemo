@@ -14,7 +14,7 @@ Android Lint的使用
     // module的aar内部包含检测规则
     lintPublish project(path: ':lintlib')
     ```
-备注：.github/workflows/android.yml github编译工作流
+备注：.github/workflows/android.yml [github编译工作流](https://github.com/yanchunlan/LintDemo/actions)
     
 ## 功能介绍
 1.  LogDetector  不允许直接使用Log
